@@ -40,11 +40,8 @@ function fish_prompt
   set -l normal (set_color normal)
 
   set ssharrow ''
-  if test "$sshclient" != 'y'
-    if [ -n "$SSH_CLIENT" ]
-      set sshclient 'y'
-      set ssharrow "$background_cyan$red-SSH-$normal "
-    end
+  if [ -n "$SSH_TTY" ]
+    set ssharrow "$background_cyan$red-SSH-$normal "
   end
 
   if test $last_status = 0
@@ -72,5 +69,5 @@ function fish_prompt
   end
 
   echo -n -s $ssharrow $arrow $username " $green❤  $normal" $cwd $git_info $normal \n\r
-  echo "$pink➜ $normal "
+  echo "$green➜ $normal "
 end
