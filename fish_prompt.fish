@@ -10,12 +10,6 @@ set -g fish_prompt_pwd_dir_length 0
 # Set greeting words
 set fish_greeting ''
 
-function fish_right_prompt
-  set_color $fish_color_autosuggestion 2> /dev/null; or set_color 555
-  echo '['(date "+%H:%M:%S")']'
-  set_color normal
-end
-
 function _git_branch_name
   echo (command git symbolic-ref HEAD 2> /dev/null | sed -e 's|^refs/heads/||')
 end
@@ -31,11 +25,13 @@ end
 
 function fish_prompt
   set -l last_status $status
+  set -l background_pink (set_color -b ff00af)
   set -l background_cyan (set_color -b cyan)
   set -l background_yellow (set_color -b yellow)
   set -l background_red (set_color -b red)
   set -l background_blue (set_color -b blue)
   set -l background_green (set_color -b green)
+  set -l pink (set_color -o ff00af)
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
   set -l red (set_color -o red)
@@ -44,8 +40,11 @@ function fish_prompt
   set -l normal (set_color normal)
 
   set ssharrow ''
-  if [ -n "$SSH_TTY" ]
+  if test "$sshclient" != 'y'
+    if [ -n "$SSH_CLIENT" ]
+      set sshclient 'y'
       set ssharrow "$background_cyan$red-SSH-$normal "
+    end
   end
 
   if test $last_status = 0
@@ -54,7 +53,7 @@ function fish_prompt
       set arrow "$red❌ $normal "
   end
 
-  if [ (id -u) = 0 ]
+  if [ (id -u) = "0" ]
       set username "$background_yellow$red" '[⚡ root]' "$normal"
   else
       set username '[' "$USER" ']'
@@ -73,5 +72,5 @@ function fish_prompt
   end
 
   echo -n -s $ssharrow $arrow $username " $green❤  $normal" $cwd $git_info $normal \n\r
-  echo "$green➜ $normal "
+  echo "$pink➜ $normal "
 end
