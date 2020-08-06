@@ -1,11 +1,23 @@
-# fish-theme-Athene
+# 👉fish-theme-Athene
 Athene 是一个oh my fish的主题, 基于知名主题`robbyrussell`
 > 取名为Athene（雅典娜），主意为智慧，满足美观，简约，智能等需求
 > 能够满足开发人员的常用需求（时间，git，补全，历史等），满足极客的装X需求，以及一般使用者的开箱即用以及美观等需求
 
 ![](./2020-08-05_114748.jpg)
 
-# 功能
+# 🔨使用
+
+1. 安装fish和oh my fish
+
+2. 使用omf安装
+```shell
+omf install  https://github.com/AbelChe/fish-theme-Athene
+omf theme fish-theme-Athene
+```
+
+3. 重启终端
+
+# 🎲功能
 站在巨人的肩膀上，这令Athene既美观又实用。
 ps：在windows平台上想要获得较好的体验，建议使用`Fluent Terminal`等终端。
 - fish的功能（补全，提示，历史提示，模糊搜索等）
@@ -23,7 +35,7 @@ ps：在windows平台上想要获得较好的体验，建议使用`Fluent Termin
 
 - 如果当前终端是SSH终端，显示`-SSH-`进行提示
 
-# 已知问题
+# 👿已知问题
 
 - [ ] 1. SSH的提示问题：在ssh终端中su到其他用户后终端会判定为常规tty终端
 
