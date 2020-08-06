@@ -26,7 +26,7 @@ echo "fish-theme-Athene" > ~/.config/omf/theme
 ps：在windows平台上想要获得较好的体验，建议使用`Fluent Terminal`等终端。
 - fish的功能（补全，提示，历史提示，模糊搜索等）
 
-- ❌ ✔ 显示上调命令的执行结果
+- ❌ ✔ 显示上条命令的执行结果
 
 - 显示用户名，root用户⚡特殊显示
 
@@ -37,7 +37,7 @@ ps：在windows平台上想要获得较好的体验，建议使用`Fluent Termin
 
 - 在右侧显示时间
 
-- 如果当前终端是SSH终端，显示`-SSH-`进行提示
+- 如果当前终端是SSH终端，显示`☁`进行提示
 
 # 👿已知问题
 
