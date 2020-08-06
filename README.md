@@ -14,6 +14,10 @@ Athene 是一个oh my fish的主题, 基于知名主题`robbyrussell`
 omf install https://github.com/AbelChe/fish-theme-Athene
 omf theme fish-theme-Athene
 ```
+> ps: 如果有报错，可以使用omf doctor检查错误，若是关于主题配置链接文件冲突的问题，可以直接用下面一条命令覆盖主题配置文件（ps:如果主题安装完样式没有完全加载，也可能是`~/.config/omf/theme`没有同步）
+```shell
+echo "fish-theme-Athene" > ~/.config/omf/theme
+```
 
 3. 重启终端
 
