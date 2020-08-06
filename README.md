@@ -11,7 +11,7 @@ Athene 是一个oh my fish的主题, 基于知名主题`robbyrussell`
 
 2. 使用omf安装
 ```shell
-omf install  https://github.com/AbelChe/fish-theme-Athene
+omf install https://github.com/AbelChe/fish-theme-Athene
 omf theme fish-theme-Athene
 ```
 
