@@ -41,7 +41,7 @@ function fish_prompt
 
   set ssharrow ''
   if [ -n "$SSH_TTY" ]
-    set ssharrow "$background_cyan$red-SSH-$normal "
+    set ssharrow "$pink☁ $normal"
   end
 
   if test $last_status = 0
