@@ -41,11 +41,11 @@ function fish_prompt
 
   set ssharrow ''
   if [ -n "$SSH_TTY" ]
-    set ssharrow '☁ '
+    set ssharrow '☁  '
   end
 
   if test $last_status = 0
-      set arrow "$green✔ $normal "
+      set arrow "$green✔  $normal "
   else
       set arrow "$red❌ $normal "
   end
