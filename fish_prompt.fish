@@ -41,7 +41,7 @@ function fish_prompt
 
   set ssharrow ''
   if [ -n "$SSH_TTY" ]
-    set ssharrow '☁  '
+    set ssharrow '☁  @'(hostname)
   end
 
   if test $last_status = 0
