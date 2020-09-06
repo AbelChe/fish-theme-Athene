@@ -45,9 +45,9 @@ function fish_prompt
   end
 
   if test $last_status = 0
-      set arrow "$green✔  $normal "
+      set arrow "$green✔ $normal "
   else
-      set arrow "$red❌ $normal "
+      set arrow "$red✕ $normal "
   end
 
   if [ (id -u) = "0" ]
