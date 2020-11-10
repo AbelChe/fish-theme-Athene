@@ -3,8 +3,11 @@ Athene 是一个oh my fish的主题, 基于知名主题`robbyrussell`
 > 取名为Athene（雅典娜），主意为智慧，满足美观，简约，智能等需求
 > 能够满足开发人员的常用需求（时间，git，补全，历史等），满足极客的装X需求，以及一般使用者的开箱即用以及美观等需求
 
+win
 ![](./2020-08-05_114748.jpg)
 
+mac
+![](./mac_screen.png)
 # 🔨使用
 
 1. 安装fish和oh my fish
