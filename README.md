@@ -7,7 +7,7 @@ win
 ![](./2020-08-05_114748.jpg)
 
 mac
-![](./mac_screen.png)
+![](./mac_screen.jpg)
 # 🔨使用
 
 1. 安装fish和oh my fish
